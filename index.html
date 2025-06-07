@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>البناء للمذيعين</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #4e342e, #6d4c41);
+      color: #fbe9e7;
+    }
+    .gold-oval {
+      background: linear-gradient(145deg, #fbc02d, #f57f17);
+      color: #fff;
+      border-radius: 9999px;
+      padding: 20px;
+      min-width: 280px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  
+    @keyframes flash {
+      0%, 100% { background-color: #fbc02d; color: #fff; }
+      50% { background-color: #fff176; color: #000; }
+    }
+    .flash {
+      animation: flash 1s infinite;
+    }
+    </style>
+
+</head>
+<body>
+  <!-- صورة رأسية للحدث -->
+  
+  <!-- خلفية ثابتة -->
+  <section class="relative h-80 bg-fixed bg-center bg-cover" style="background-image: url('A_digital_illustration_in_sepia_tones_with_gold_ac.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+      
+      <h1 class="text-white text-4xl md:text-5xl font-extrabold animate-bounce">حدث البناء للمذيعين</h1>
+
+    </div>
+  </section>
+
+
+
+  <!-- بوستر -->
+  <section class="relative h-64 bg-cover bg-center" style="background-image: url('poster.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+      <h1 class="text-white text-4xl font-bold">البناء للمذيعين</h1>
+    </div>
+  </section>
+
+  <!-- عداد بشكل بيضاوي ذهبي -->
+  <section class="text-center py-10">
+    <div class="gold-oval inline-block text-lg leading-loose" id="countdown">
+      ⏳ العد التنازلي:<br/>
+      <span id="days">0</span> يوم &nbsp; | &nbsp;
+      <span id="hours">0</span> ساعة &nbsp; | &nbsp;
+      <span id="minutes">0</span> دقيقة &nbsp; | &nbsp;
+      <span id="seconds">0</span> ثانية
+    </div>
+  </section>
+
+  
+<!-- التواريخ -->
+<section class="text-center py-6">
+  <p class="text-lg text-yellow-200 font-semibold">📅 يبدأ الحدث في: <span class="underline">15 يونيو</span></p>
+  <p class="text-lg text-yellow-200 font-semibold mt-1">📅 ينتهي الحدث في: <span class="underline">20 يونيو</span></p>
+</section>
+
+<!-- وصف الحدث -->
+  <section class="p-6 max-w-4xl mx-auto text-center">
+    <p class="text-xl leading-loose">
+      هل أنت مستعد لتثبت نفسك وتبني مكانتك داخل وكالة ذيب؟<br/>
+      انطلق معنا في حدث البناء، حيث كل لحظة من مجهودك تتحول إلى نقاط ترفعك نحو القمة! 🔥
+    </p>
+  </section>
+
+  <!-- الجوائز -->
+  <section class="p-6 max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-semibold mb-4 text-yellow-300">🏆 الجوائز</h3>
+    <table class="w-full border mb-4 text-white">
+      <thead class="bg-yellow-700 text-white">
+        <tr><th class="border p-2">المركز</th><th class="border p-2">نسبة الجائزة</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="border p-2">الأول</td><td class="border p-2">25%</td></tr>
+        <tr><td class="border p-2">الثاني</td><td class="border p-2">15%</td></tr>
+        <tr><td class="border p-2">الثالث</td><td class="border p-2">10%</td></tr>
+        <tr><td class="border p-2">الرابع – العاشر</td><td class="border p-2">7%</td></tr>
+      </tbody>
+    </table>
+    <p class="text-sm text-yellow-100">💡 تُحسب الجوائز من إجمالي النقاط المجمعة خلال فترة الحدث.</p>
+  </section>
+
+  <!-- النقاط -->
+  <section class="p-6 max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-semibold mb-4 text-yellow-300">🎯 نظام النقاط</h3>
+    <table class="w-full border mb-10 text-white">
+      <thead class="bg-yellow-800 text-white">
+        <tr><th class="border p-2">النشاط</th><th class="border p-2">النقاط</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="border p-2">كل ساعة بث مباشر</td><td class="border p-2">10 نقاط</td></tr>
+        <tr><td class="border p-2">كل فاصوليا محصّلة</td><td class="border p-2">10 نقاط</td></tr>
+        <tr><td class="border p-2">دعوة مقبولة (مذيع جديد)</td><td class="border p-2">150 نقطة</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- المشاركون -->
+  
+  <!-- فاصل متحرك -->
+  <div class="w-full overflow-hidden my-10">
+    <div class="h-1 bg-gradient-to-r from-yellow-500 via-yellow-300 to-yellow-500 animate-pulse"></div>
+  </div>
+
+  <!-- زر شارك الآن -->
+  <div class="text-center mb-6">
+    <button onclick="alert('شارك الآن!')" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+      🚀 شارك الآن
+    </button>
+  </div>
+
+  <!-- المشاركون -->
+  <section class="p-6 max-w-3xl mx-auto">
+
+    <h2 class="text-2xl font-semibold mb-6 text-yellow-300 text-center">المشاركون</h2>
+    <div class="space-y-6">
+      <div class="flex items-center justify-between bg-yellow-900 bg-opacity-10 p-4 rounded">
+        <div class="flex items-center gap-4">
+          <img src="person1.jpg" class="w-16 h-16 rounded-full object-cover" alt="مشارك 1">
+          <p class="text-lg font-medium text-white">مشارك 1</p>
+        </div>
+        <span class="text-yellow-200 font-bold text-lg">1250 نقطة</span>
+      </div>
+      <div class="flex items-center justify-between bg-yellow-900 bg-opacity-10 p-4 rounded">
+        <div class="flex items-center gap-4">
+          <img src="person2.jpg" class="w-16 h-16 rounded-full object-cover" alt="مشارك 2">
+          <p class="text-lg font-medium text-white">مشارك 2</p>
+        </div>
+        <span class="text-yellow-200 font-bold text-lg">970 نقطة</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- نهاية -->
+  <footer class="text-center py-6 mt-12 text-yellow-300 font-bold text-lg">
+    هذا الحدث فقط لـ مؤسسة ذيب
+  </footer>
+
+  <script>
+    const countdown = () => {
+      const target = new Date("2025-06-20T23:59:00").getTime();
+      const now = new Date().getTime();
+      const diff = target - now;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+      
+      if (diff <= 600000 && diff > 0) {
+        document.getElementById("countdown").classList.add("flash");
+      }
+      if (diff <= 0) {
+
+        document.getElementById("countdown").innerHTML = "✅ انتهى الحدث";
+      }
+    };
+    setInterval(countdown, 1000);
+  </script>
+
+</body>
+</html>
